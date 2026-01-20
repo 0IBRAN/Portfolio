@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1120;
+  color: white;
+  text-align: center;
+}
+
+.hero {
+  padding: 100px 20px;
+  background: linear-gradient(135deg,#1e3a8a,#020617);
+}
+
+.btn {
+  padding: 12px 28px;
+  background: #4f46e5;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 60px;
+}
+
+.contact input, button {
+  padding: 10px;
+  margin: 8px;
+  width: 250px;
+}
