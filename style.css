@@ -150,78 +150,62 @@
       background:rgba(255,255,255,0.1);
     }
 /* CONTACT - NEW */
-.contact{
-  padding:80px 20px;
-  display:flex;
-  justify-content:center;
+.contact-section {
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
 }
 
-.contact-box{
-  max-width:900px;
-  width:100%;
-  background:linear-gradient(180deg,#020617,#020617);
-  border-radius:24px;
-  padding:60px 40px;
-  box-shadow:0 20px 60px rgba(0,0,0,0.5);
+.contact-box {
+  max-width: 700px;
+  width: 100%;
+  background: radial-gradient(circle at top left, #111827, #020617);
+  padding: 50px;
+  border-radius: 24px;
+  text-align: center;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
 }
 
-.contact-info{
-  text-align:center;
-  margin-bottom:40px;
+.contact-box h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
 }
 
-.contact-info ul{
-  list-style:none;
-  padding:0;
-  margin:30px 0;
+.contact-box p {
+  color: #9ca3af;
+  font-size: 16px;
+  margin-bottom: 35px;
 }
 
-.contact-info li{
-  margin:12px 0;
-  color:#cbd5f5;
+
+.email-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #6366f1, #22d3ee);
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.email-btn{
-  display:inline-block;
-  margin-top:20px;
-  padding:12px 26px;
-  border-radius:14px;
-  border:1px solid rgba(255,255,255,0.2);
-  text-decoration:none;
-  color:white;
+.email-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(99,102,241,0.4);
 }
 
-.contact-form{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:16px;
-}
 
-.contact-form textarea{
-  grid-column:1 / -1;
-  min-height:120px;
-}
 
-.contact-form button{
-  grid-column:1 / -1;
-  padding:14px;
-  border-radius:14px;
-  border:none;
-  background:#6366f1;
-  color:white;
-  font-weight:600;
-  cursor:pointer;
-}
 
-    @media(max-width:600px){
-  .contact-form{
-    grid-template-columns:1fr;
-  }
-}
+
+
+
 
     @media(max-width:800px){.about{grid-template-columns:1fr}}
     @media(max-width:768px){.projects{grid-template-columns:repeat(2,1fr)}}
     @media(max-width:480px){.projects{grid-template-columns:1fr}}
 
   
+
 
