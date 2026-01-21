@@ -112,12 +112,40 @@ This project focuses on professional workflow design, clean transitions between 
     </div>
   </div>
 </section>
+<form action="https://formsubmit.co/ibransheikh@gmail.com" method="POST" class="contact-form">
+
+  <input type="text" name="name" placeholder="Your Name" required>
+
+  <input type="email" name="email" placeholder="Your Email" required>
+
+  <textarea name="message" placeholder="Tell me about your project" required></textarea>
+
+  <!-- SETTINGS -->
+  <input type="hidden" name="_subject" value="New Portfolio Contact">
+  <input type="hidden" name="_captcha" value="false">
+
+  <!-- Auto Reply -->
+  <input type="hidden" name="_autoresponse" 
+  value="Hi {{name}},
+
+Thank you for reaching out to me through my portfolio website.
+
+I have received your message and will get back to you within 24 hours.
+
+Best regards,
+Ibran
+Web Developer">
+
+  <!-- Redirect after submit -->
+  <input type="hidden" name="_next" value="thankyou.html">
+
+  <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
 
 <footer>© 2026 Ibran. All rights reserved.</footer>
 <script src="script.js"></script>
 </body>
 </html>
-<script src="script.js"></script>
-</body>
-</html>
+
+
 
