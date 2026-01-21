@@ -149,65 +149,74 @@
       border-radius:999px;
       background:rgba(255,255,255,0.1);
     }
-
-    /* CONTACT */
-    .contact-box{
-      text-align:center;
-      background:linear-gradient(180deg,rgba(255,255,255,0.06),rgba(255,255,255,0.02));
-      border:1px solid rgba(255,255,255,0.1);
-      padding:60px 34px;
-      border-radius:28px;
-    }
-
-    footer{
-      padding:30px;
-      text-align:center;
-      color:var(--muted);
-      font-size:14px;
-    }
-#contact {
-  padding: 80px 20px;
-  background: #0f172a;
-  color: white;
-  text-align: center;
+/* CONTACT - NEW */
+.contact{
+  padding:80px 20px;
+  display:flex;
+  justify-content:center;
 }
 
-#contact h2 {
-  font-size: 36px;
-  margin-bottom: 30px;
+.contact-box{
+  max-width:900px;
+  width:100%;
+  background:linear-gradient(180deg,#020617,#020617);
+  border-radius:24px;
+  padding:60px 40px;
+  box-shadow:0 20px 60px rgba(0,0,0,0.5);
 }
 
-#contact form {
-  max-width: 500px;
-  margin: auto;
+.contact-info{
+  text-align:center;
+  margin-bottom:40px;
 }
 
-#contact input,
-#contact textarea {
-  width: 100%;
-  padding: 14px;
-  margin-bottom: 15px;
-  border: none;
-  border-radius: 6px;
-  outline: none;
+.contact-info ul{
+  list-style:none;
+  padding:0;
+  margin:30px 0;
 }
 
-#contact textarea {
-  height: 120px;
+.contact-info li{
+  margin:12px 0;
+  color:#cbd5f5;
 }
 
-#contact button {
-  padding: 14px 30px;
-  background: #38bdf8;
-  color: #0f172a;
-  border: none;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
+.email-btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:12px 26px;
+  border-radius:14px;
+  border:1px solid rgba(255,255,255,0.2);
+  text-decoration:none;
+  color:white;
 }
 
-#contact button:hover {
-  background: #0ea5e9;
+.contact-form{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+}
+
+.contact-form textarea{
+  grid-column:1 / -1;
+  min-height:120px;
+}
+
+.contact-form button{
+  grid-column:1 / -1;
+  padding:14px;
+  border-radius:14px;
+  border:none;
+  background:#6366f1;
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+}
+
+    @media(max-width:600px){
+  .contact-form{
+    grid-template-columns:1fr;
+  }
 }
 
     @media(max-width:800px){.about{grid-template-columns:1fr}}
@@ -215,3 +224,4 @@
     @media(max-width:480px){.projects{grid-template-columns:1fr}}
 
   
+
