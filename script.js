@@ -1,32 +1,25 @@
- function showNextStep(){
-    document.getElementById('contact').style.display = 'none';
-    document.getElementById('next-step').style.display = 'block';
-    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+// 
 
-  }
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
-<script>
-(function () {
-  emailjs.init("YOUR_PUBLIC_KEY"); // EmailJS dashboard se
-})();
 
-document.getElementById("contact-form").addEventListener("submit", function (e) {
-  e.preventDefault();
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
 
-  emailjs.sendForm(
-    "YOUR_SERVICE_ID",   // e.g. service_gmail
-    "template_admin",    // admin template
-    this
-  ).then(
-    function () {
-      alert("Message sent successfully!");
-      document.getElementById("contact-form").reset();
-    },
-    function (error) {
-      alert("Something went wrong. Try again.");
-      console.error(error);
-    }
-  );
-});
-</script>
+if (menuToggle && navLinks) {
+  menuToggle.addEventListener("click", () => {
+    const isOpen = navLinks.classList.toggle("open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+    menuToggle.setAttribute("aria-label", isOpen ? "Close navigation" : "Open navigation");
+  });
+
+  navLinks.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation");
+    });
+  });
+}
+
+const year = document.querySelector("#year");
+if (year) year.textContent = new Date().getFullYear();

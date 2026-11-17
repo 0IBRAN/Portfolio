@@ -1,10 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101311">
+  <meta name="description" content="Ibran Shaikh — Frontend developer building responsive, modern websites with HTML, CSS and JavaScript.">
+  <title>Ibran Shaikh — Frontend Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="site-shell">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Ibran home"><span class="brand-mark">I.</span><span>IBRAN<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#work">Selected work</a>
+        <a href="#contact" class="nav-cta">Let's talk <span>↗</span></a>
+      </div>
+    </nav>
+
+    <main>
+      <section class="hero container" id="home">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> AVAILABLE FOR FREELANCE PROJECTS</div>
+          <p class="hero-kicker">FRONTEND DEVELOPER · INDIA</p>
+          <h1>Turning ideas<br>into <span class="accent-text">digital</span><br>experiences<span class="period">.</span></h1>
+          <p class="hero-description">Hey, I'm Ibran. I build clean, responsive websites that help people and businesses show up confidently online.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#work">Explore my work <span>↘</span></a>
+            <a class="text-link" href="#contact">Get in touch <span>↗</span></a>
+          </div>
+          <div class="hero-meta">
+            <span><b>01</b> Thoughtful design</span>
+            <span><b>02</b> Responsive layouts</span>
+            <span><b>03</b> Clean code</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Abstract decorative graphic">
+          <div class="art-grid"></div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="art-core"><span>IS</span></div>
+          <div class="art-label label-top">DESIGN MINDED<br>DEVELOPER</div>
+          <div class="art-label label-bottom">BUILD · TEST · IMPROVE</div>
+          <div class="art-cross">✳</div>
+        </div>
+        <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
+      </section>
+
+      <section class="intro-section section container" id="about">
+        <div class="section-index">01 / ABOUT</div>
+        <div class="intro-content">
+          <p class="section-eyebrow">A LITTLE INTRODUCTION</p>
+          <h2>I care about the details that make a website feel <span class="muted-text">simple, useful and memorable.</span></h2>
+          <div class="intro-bottom">
+            <p>I'm an aspiring frontend developer focused on building modern web interfaces. I enjoy turning ideas and layouts into responsive pages, learning new tools, and improving every project through practice.</p>
+            <a class="round-link" href="https://www.linkedin.com/in/ibran-maenuddin-4076a435b/" target="_blank" rel="noopener noreferrer" aria-label="Visit LinkedIn">↗</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-section section" id="skills">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <div class="section-index">02 / TOOLKIT</div>
+              <p class="section-eyebrow">WHAT I WORK WITH</p>
+              <h2>My current toolkit<span class="accent-text">.</span></h2>
+            </div>
+            <p class="heading-note">Building a strong foundation, one project at a time.</p>
+          </div>
+          <div class="skill-grid">
+            <article class="skill-card">
+              <span class="skill-number">01</span><div class="skill-icon">⌘</div>
+              <h3>HTML5</h3><p>Semantic structure, accessible markup and forms.</p>
+              <span class="skill-level">FOUNDATION</span>
+            </article>
+            <article class="skill-card">
+              <span class="skill-number">02</span><div class="skill-icon">✳</div>
+              <h3>CSS3</h3><p>Flexbox, Grid, responsive layouts and visual styling.</p>
+              <span class="skill-level">FOUNDATION</span>
+            </article>
+            <article class="skill-card">
+              <span class="skill-number">03</span><div class="skill-icon">JS</div>
+              <h3>JavaScript</h3><p>Functions, callbacks, closures and DOM interactions.</p>
+              <span class="skill-level">LEARNING & BUILDING</span>
+            </article>
+            <article class="skill-card skill-card-learning">
+              <span class="skill-number">04</span><div class="skill-icon">⚛</div>
+              <h3>React</h3><p>Currently learning component-based frontend development.</p>
+              <span class="skill-level">CURRENTLY LEARNING</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-section section container" id="work">
+        <div class="section-heading">
+          <div>
+            <div class="section-index">03 / SELECTED WORK</div>
+            <p class="section-eyebrow">A FEW THINGS I'VE BUILT</p>
+            <h2>Projects in focus<span class="accent-text">.</span></h2>
+          </div>
+          <p class="heading-note">A growing collection of practice and portfolio projects.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card">
+            <a class="project-visual visual-one" href="./Project-1/index.html" target="_blank" rel="noopener noreferrer" aria-label="Open Business Landing Page">
+              <div class="browser-bar"><i></i><i></i><i></i><span>business / landing page</span></div>
+              <div class="mockup-one"><small>YOUR BRAND, ONLINE.</small><strong>Make your<br>next move.</strong><b>Explore services ↗</b></div>
+              <span class="visual-number">01</span>
+            </a>
+            <div class="project-info"><div><p class="project-type">BUSINESS WEBSITE · HTML / CSS</p><h3>Business Landing Page</h3></div><a class="project-arrow" href="./Project-1/index.html" target="_blank" rel="noopener noreferrer" aria-label="View Business Landing Page">↗</a></div>
+            <p class="project-description">A focused landing page concept designed to introduce a business and guide visitors towards taking action.</p>
+          </article>
+
+          <article class="project-card">
+            <a class="project-visual visual-two" href="./Project-2/index.html" target="_blank" rel="noopener noreferrer" aria-label="Open Frontend Website">
+              <div class="browser-bar"><i></i><i></i><i></i><span>digital / experience</span></div>
+              <div class="mockup-two"><div class="mockup-side"></div><div class="mockup-content"><small>CREATE SOMETHING</small><strong>Ideas into<br>interfaces.</strong><div class="mockup-lines"></div><b>Discover more ↗</b></div></div>
+              <span class="visual-number">02</span>
+            </a>
+            <div class="project-info"><div><p class="project-type">FRONTEND · HTML / CSS / JS</p><h3>Frontend Website</h3></div><a class="project-arrow" href="./Project-2/index.html" target="_blank" rel="noopener noreferrer" aria-label="View Frontend Website">↗</a></div>
+            <p class="project-description">A frontend practice project exploring layout, visual hierarchy and responsive user interface patterns.</p>
+          </article>
+
+          <article class="project-card">
+            <a class="project-visual visual-three" href="./Project-3/index.html" target="_blank" rel="noopener noreferrer" aria-label="Open Personal Portfolio">
+              <div class="browser-bar"><i></i><i></i><i></i><span>portfolio / personal</span></div>
+              <div class="mockup-three"><div class="mockup-avatar">IS</div><small>HELLO, I'M IBRAN</small><strong>Building for<br>the <em>web.</em></strong><div class="mockup-pills"><span>DESIGN</span><span>DEVELOP</span></div></div>
+              <span class="visual-number">03</span>
+            </a>
+            <div class="project-info"><div><p class="project-type">PERSONAL WEBSITE · HTML / CSS</p><h3>Personal Portfolio</h3></div><a class="project-arrow" href="./Project-3/index.html" target="_blank" rel="noopener noreferrer" aria-label="View Personal Portfolio">↗</a></div>
+            <p class="project-description">A personal website concept to present skills, selected work and a developer's online presence.</p>
+          </article>
+        </div>
+        <p class="project-footnote">Project previews are visual covers. Open each project to see the live page.</p>
+      </section>
+
+      <section class="contact-section section" id="contact">
+        <div class="container contact-inner">
+          <div class="section-index">04 / CONTACT</div>
+          <p class="section-eyebrow">HAVE A PROJECT IN MIND?</p>
+          <h2>Let's make something<br><span class="accent-text">meaningful.</span></h2>
+          <p class="contact-copy">Need a clean landing page or a responsive website for your business? Let's connect and talk about your idea.</p>
+          <div class="contact-actions">
+            <a class="button button-primary" href="https://www.linkedin.com/in/ibran-maenuddin-4076a435b/" target="_blank" rel="noopener noreferrer">Connect on LinkedIn <span>↗</span></a>
+            <a class="button button-outline" href="https://github.com/0IBRAN" target="_blank" rel="noopener noreferrer">Explore GitHub <span>↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer container">
+      <a class="brand" href="#home"><span class="brand-mark">I.</span><span>IBRAN<span class="brand-dot">.</span></span></a>
+      <p>Designed & built by Ibran Shaikh · <span id="year"></span></p>
+      <a href="#home" class="back-top">BACK TO TOP ↑</a>
+    </footer>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ibran | Premium Web Developer</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="02-style.css">
 </head>
 <body>
 <header>
@@ -62,58 +260,58 @@
     </div>
     <div class="projects">
       <div class="project">
-        <h3>Modern Business Landing Page</h3>
-        <p>A clean and conversion-focused landing page designed to create a strong first impression.
-This project highlights clear content hierarchy, smooth UI sections, and responsive layouts that adapt perfectly across all devices. The goal of this project is to help businesses communicate their value quickly and turn visitors into potential leads.</p>
-        <div class="tags"><span>HTML</span><span>CSS</span><span>UI Design</span> <span>Responsive Design</span></div>
+        <h3>Luxury Business Landing Page</h3>
+        <p>A high-converting landing page designed to increase leads, credibility, and customer trust.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>UI Design</span></div>
         <a href="/Portfolio/Project-1/index.html" target="_blank" class="btn btn-outline" style="margin-top:16px;display:inline-block">View Project</a>
       </div>
       <div class="project">
-        <h3>Multi-Option Website Builder Interface</h3>
-        <p>An interactive multi-step website selection interface where users can choose between different website types such as Landing Page, Business Website, or Portfolio. After selection, users are guided through additional steps, simulating a real client onboarding flow.
-This project demonstrates logical navigation, structured UI flow, and real-world usability concepts used in professional web projects.</p>
-        <div class="tags"><span>HTML</span><span>CSS</span><span>UI Design</span> <span>User Flow Desig</span></div>
+        <h3>Luxury Business Landing Page</h3>
+        <p>A high-converting landing page designed to increase leads, credibility, and customer trust.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>UI Design</span></div>
         <a href="./Project-2/index.html" target="_blank" class="btn btn-outline" style="margin-top:16px;display:inline-block">View Project</a>
       </div>
       <div class="project">
-        <h3>End-to-End Website Planning Experience</h3>
-        <p>A complete multi-page project that simulates a real client journey — from selecting a website type, choosing features, to viewing the final project roadmap.
-This project focuses on professional workflow design, clean transitions between steps, and a structured development process. It reflects how real freelance and agency projects are planned, discussed, and executed.</p>
-        <div class="tags"><span>HTML</span><span>CSS</span><span>UI Design</span><span>JavaScript</span><span>Project Architecture</span></div>
+        <h3>Luxury Business Landing Page</h3>
+        <p>A high-converting landing page designed to increase leads, credibility, and customer trust.</p>
+        <div class="tags"><span>HTML</span><span>CSS</span><span>UI Design</span></div>
         <a href="./Project-3/index.html" target="_blank" class="btn btn-outline" style="margin-top:16px;display:inline-block">View Project</a>
       </div>
     </div>
   </div>
 </section>
 
-
-
 <section id="contact">
   <div class="container">
     <div class="contact-box">
-      <h2>Let’s Work Together</h2>
-      <p>
-        Looking for a premium website that delivers results?
-        Click below to contact me directly — I usually reply within 24 hours.
-      </p>
-
-      <a
-        href="mailto:ibransheikh00@gmail.com?subject=Hiring%20Inquiry&body=Hi%20Ibran,%0A%0AI%20am%20interested%20in%20working%20with%20you.%0A%0ARegards,"
-        class="email-btn"
-      >
-        📧 Email Me Directly
-      </a>
+      <h2>Let's Work Together</h2>
+      <p style="color:var(--muted);margin:15px 0 28px">Looking for a premium website that delivers results? Let’s build something impactful together.</p>
+      <button onclick="showNextStep()" class="btn btn-primary">Contact Me</button>
     </div>
   </div>
 </section>
 
-  
+<section id="next-step" style="display:none;">
+  <div class="container">
+    <div class="contact-box">
+      <h2>✅ Thanks for Reaching Out</h2>
+      <p style="color:var(--muted);margin:15px 0 25px">Your message has been received. Here’s what happens next:</p>
+      <ul style="list-style:none;color:var(--muted);line-height:2">
+        <li>📩 I review your project requirements</li>
+        <li>📞 I contact you within 24 hours</li>
+        <li>🧠 We discuss goals, timeline, and budget</li>
+        <li>🚀 The project begins with a clear roadmap</li>
+      </ul>
+      <p style="margin-top:28px;font-weight:500">Need faster communication?</p>
+      <a href="mailto:yourmail@gmail.com" class="btn btn-outline">Email Me Directly</a>
+    </div>
+  </div>
+</section>
+
 <footer>© 2026 Ibran. All rights reserved.</footer>
-<script src="script.js"></script>
+<script src="03-script.js"></script>
 </body>
 </html>
-
-
-
-
-
+<script src="03-script.js"></script>
+</body>
+</html> -->
