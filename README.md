@@ -2,7 +2,7 @@
 
 A responsive personal portfolio showcasing frontend skills and selected web projects.
 
-**Live portfolio:** https://0ibran.github.io/Portfolio/
+**Live portfolio:** https://ibranportfolio.netlify.app/
 
 ## Technologies
 
@@ -14,7 +14,11 @@ A responsive personal portfolio showcasing frontend skills and selected web proj
 ## Projects
 
 - [Business Landing Page](./Project-1/index.html) — a business-focused landing page.
-- [Frontend Website](./Project-2/index.html) — a frontend practice project exploring responsive interface patterns.
-- [Personal Portfolio](./Project-3/index.html) — a personal website concept presenting skills and work.
+- [Frontend Website](./Project-2/index.html) — explore landing page, business website, and portfolio demo pages.
+- [Personal Portfolio](./Project-3/index.html) — a guided website-planning concept with selectable features.
 
-Open `index.html` to explore the portfolio and its project links.
+## Run locally
+
+Open the root `index.html` file in a browser, or use the VS Code Live Server extension.
+
+Project previews on the main portfolio are visual covers. Open each project card to view its page.
