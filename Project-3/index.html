@@ -1,37 +1,63 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Project 3 - Select Type</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUXORA — Digital Experiences</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-  <h2>Ibran</h2>
-</nav>
+  <nav>
+    <h2>LUXORA.</h2>
+    <span>INDEPENDENT DIGITAL STUDIO</span>
+  </nav>
 
-<section class="projects">
-  <h1>Select Website Type</h1>
-  <p>Choose what you want to build</p>
+  <main class="projects">
 
-  <div class="cards">
-    <a href="features.html" class="card">
-      <h3>Landing Page</h3>
-      <p>High converting marketing page</p>
-    </a>
+    <p>THE ART OF DIGITAL PRESENCE</p>
 
-    <a href="features.html" class="card">
-      <h3>Business Website</h3>
-      <p>Professional company website</p>
-    </a>
+    <h1>Build Something<br><em>Extraordinary.</em></h1>
 
-    <a href="features.html" class="card">
-      <h3>Portfolio</h3>
-      <p>Personal branding website</p>
-    </a>
-  </div>
-</section>
+    <p>
+      Thoughtful design. Powerful technology.
+      Digital experiences crafted around your vision.
+    </p>
+
+    <div class="cards">
+
+      <a href="features.html" class="card"
+         onclick="localStorage.setItem('websiteType','Landing Page')">
+        <span>01 / DIGITAL</span>
+        <h3>Landing Page</h3>
+        <p>A striking first impression that turns visitors into customers.</p>
+      </a>
+
+      <a href="features.html" class="card"
+         onclick="localStorage.setItem('websiteType','Business Website')">
+        <span>02 / CORPORATE</span>
+        <h3>Business Website</h3>
+        <p>A refined digital identity for ambitious businesses.</p>
+      </a>
+
+      <a href="features.html" class="card"
+         onclick="localStorage.setItem('websiteType','Portfolio')">
+        <span>03 / PERSONAL</span>
+        <h3>Portfolio</h3>
+        <p>A personal platform that makes your work unforgettable.</p>
+      </a>
+
+    </div>
+
+    <p>SCROLL LESS. EXPERIENCE MORE.</p>
+
+  </main>
+
+  <footer>
+    <span>© 2026 LUXORA STUDIO</span>
+    <span>DESIGNED WITH INTENTION.</span>
+  </footer>
 
 </body>
 </html>

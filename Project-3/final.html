@@ -1,32 +1,75 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Project 3 - Final</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUXORA — Project Overview</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-  <h2>Ibran</h2>
-</nav>
+  <nav>
+    <h2>LUXORA.</h2>
+    <span>PROJECT OVERVIEW — STEP 03</span>
+  </nav>
 
-<section class="projects">
-  <h1>Project Ready 🚀</h1>
-  <p>This is how we will build your website</p>
+  <main class="projects">
 
-  <div class="card">
-    <p>
-      ✔ Requirement Analysis <br>
-      ✔ UI / UX Design <br>
-      ✔ Development <br>
-      ✔ Testing & Launch
-    </p>
-  </div>
+    <p>YOUR VISION, OUR CRAFT</p>
 
-  <br>
-  <a href="../index.html" class="btn">Back to Portfolio</a>
-</section>
+    <h1>A New Digital<br><em>Experience Begins.</em></h1>
+
+    <p>Your project configuration is ready for review.</p>
+
+    <div class="card" style="text-align:left; max-width:700px; margin:0 auto;">
+
+      <p>01 / WEBSITE TYPE</p>
+      <h3 id="websiteType">Your Selected Website</h3>
+
+      <hr style="border:0; border-top:1px solid #DED3C5; margin:25px 0;">
+
+      <p>02 / SELECTED FEATURES</p>
+      <div id="selectedFeatures">
+        <p>Your selected features will appear here.</p>
+      </div>
+
+      <hr style="border:0; border-top:1px solid #DED3C5; margin:25px 0;">
+
+      <p>03 / OUR CREATIVE PROCESS</p>
+      <h3>From Vision to Reality</h3>
+      <p>01 — Requirement Analysis</p>
+      <p>02 — UI / UX Design</p>
+      <p>03 — Development</p>
+      <p>04 — Testing & Launch</p>
+
+    </div>
+
+    <br><br>
+
+    <a href="index.html" class="btn">Start a New Project →</a>
+
+  </main>
+
+  <footer>
+    <span>© 2026 LUXORA STUDIO</span>
+    <span>DESIGNED WITH INTENTION.</span>
+  </footer>
+
+  <script>
+    document.getElementById("websiteType").textContent =
+      localStorage.getItem("websiteType") || "Not selected";
+
+    const features = JSON.parse(
+      localStorage.getItem("selectedFeatures") || "[]"
+    );
+
+    const featureBox = document.getElementById("selectedFeatures");
+
+    featureBox.innerHTML = features.length
+      ? features.map(feature => `<p>✓ ${feature}</p>`).join("")
+      : "<p>No additional features selected.</p>";
+  </script>
 
 </body>
 </html>

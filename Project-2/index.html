@@ -1,37 +1,285 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Project 2 – Website Types</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create your next digital experience with Atelier Studio.">
+  <title>ATELIER — Digital Experiences</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<nav>
-  <h2>Ibran</h2>
-</nav>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <a href="#" class="logo">ATELIER<span>.</span></a>
 
-<section class="projects">
-  <h1>Select Website Type</h1>
-  <p>Choose the type of website to explore the project flow.</p>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#process">Our Process</a>
+    </nav>
 
-  <div class="cards">
-    <a href="landing.html" class="card">
-      <h3>Landing Page</h3>
-      <p>High-conversion single page website.</p>
-    </a>
+    <a href="#builder" class="nav-button">Start a Project ↗</a>
+  </header>
 
-    <a href="business.html" class="card">
-      <h3>Business Website</h3>
-      <p>Multi-page professional business layout.</p>
-    </a>
+  <main>
 
-    <a href="portfolio.html" class="card">
-      <h3>Portfolio Website</h3>
-      <p>Personal branding & project showcase.</p>
-    </a>
-  </div>
-</section>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
 
-</body>
-</html>
+      <div class="hero-content">
+        <span class="eyebrow">
+          <span class="gold-dot"></span>
+          INDEPENDENT DIGITAL STUDIO
+        </span>
+
+        <h1>
+          Crafting digital<br>
+          experiences with<br>
+          <em>purpose & elegance.</em>
+        </h1>
+
+        <p>
+          We transform ambitious ideas into beautiful,
+          functional and memorable digital experiences.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#builder" class="primary-button">
+            Build Your Project <span>↗</span>
+          </a>
+          <a href="#services" class="text-button">Explore Services ↓</a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <h3>01</h3>
+            <span>Thoughtful Design</span>
+          </div>
+          <div>
+            <h3>02</h3>
+            <span>Modern Technology</span>
+          </div>
+          <div>
+            <h3>03</h3>
+            <span>Beautiful Results</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="visual-frame">
+          <div class="visual-top">
+            <span>ATELIER / 001</span>
+            <span>CREATIVE DIRECTION</span>
+          </div>
+
+          <div class="visual-art">
+            <div class="art-circle"></div>
+            <div class="art-ring"></div>
+            <div class="art-line"></div>
+            <span class="art-number">01</span>
+            <span class="art-caption">BEYOND<br>ORDINARY.</span>
+          </div>
+
+          <div class="visual-bottom">
+            <span>DESIGN WITH INTENTION</span>
+            <span>EST. 2026</span>
+          </div>
+        </div>
+
+        <div class="floating-note">
+          <span>✦</span>
+          Made for meaningful ideas
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services section" id="services">
+
+      <div class="section-heading">
+        <span class="eyebrow">WHAT WE CREATE</span>
+        <h2>Digital solutions,<br><em>beautifully crafted.</em></h2>
+      </div>
+
+      <div class="service-grid">
+
+        <article class="service-card">
+          <span class="service-number">01 / DESIGN</span>
+          <div class="service-icon">✳</div>
+          <h3>Landing Pages</h3>
+          <p>Focused digital experiences that communicate your message and inspire action.</p>
+          <a href="#builder">Explore service ↗</a>
+        </article>
+
+        <article class="service-card">
+          <span class="service-number">02 / BUSINESS</span>
+          <div class="service-icon">◇</div>
+          <h3>Business Websites</h3>
+          <p>Professional online identities designed to build trust and grow your brand.</p>
+          <a href="#builder">Explore service ↗</a>
+        </article>
+
+        <article class="service-card">
+          <span class="service-number">03 / PERSONAL</span>
+          <div class="service-icon">✧</div>
+          <h3>Portfolio Websites</h3>
+          <p>Distinctive personal spaces to showcase your work, story and creativity.</p>
+          <a href="#builder">Explore service ↗</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- PROJECT BUILDER -->
+    <section class="builder-section section" id="builder">
+
+      <div class="builder-intro">
+        <span class="eyebrow">LET'S WORK TOGETHER</span>
+        <h2>Your vision.<br><em>Our next creation.</em></h2>
+        <p>Tell us what you have in mind. Let's create something exceptional.</p>
+      </div>
+
+      <div class="builder-panel">
+
+        <div class="builder-header">
+          <div>
+            <span class="eyebrow">PROJECT CONFIGURATOR</span>
+            <h3>Start your project</h3>
+          </div>
+          <span class="step-label" id="stepLabel">STEP 01 / 03</span>
+        </div>
+
+        <div class="progress-track">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <!-- STEP 1 -->
+        <div class="form-step" id="stepOne">
+
+          <h3>What would you like to create?</h3>
+          <p class="form-subtitle">Select the type of experience you need.</p>
+
+          <div class="type-grid">
+
+            <button class="type-card" data-type="Landing Page" type="button">
+              <span class="type-icon">↗</span>
+              <strong>Landing Page</strong>
+              <small>Focused & conversion-driven</small>
+              <span class="select-mark">+</span>
+            </button>
+
+            <button class="type-card" data-type="Business Website" type="button">
+              <span class="type-icon">▦</span>
+              <strong>Business Website</strong>
+              <small>Professional brand presence</small>
+              <span class="select-mark">+</span>
+            </button>
+
+            <button class="type-card" data-type="Portfolio Website" type="button">
+              <span class="type-icon">✧</span>
+              <strong>Portfolio Website</strong>
+              <small>Showcase your best work</small>
+              <span class="select-mark">+</span>
+            </button>
+
+          </div>
+
+          <button class="primary-button next-button" id="nextOne" disabled>
+            Continue to Details ↗
+          </button>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="form-step hidden" id="stepTwo">
+
+          <h3>Tell us about your vision.</h3>
+          <p class="form-subtitle">Share a few details about your project.</p>
+
+          <form id="projectForm">
+
+            <label for="projectName">Project / Brand Name</label>
+            <input id="projectName" type="text" placeholder="e.g. Maison Studio" required>
+
+            <label for="projectEmail">Your Email</label>
+            <input id="projectEmail" type="email" placeholder="you@example.com" required>
+
+            <label for="projectDescription">Project Description</label>
+            <textarea id="projectDescription" rows="4" placeholder="Tell us about your idea..." required></textarea>
+
+            <label for="designStyle">Preferred Design Style</label>
+            <select id="designStyle" required>
+              <option value="">Choose your style</option>
+              <option>Minimal & Elegant</option>
+              <option>Luxury & Premium</option>
+              <option>Modern & Bold</option>
+              <option>Creative & Artistic</option>
+            </select>
+
+            <div class="form-actions">
+              <button type="button" class="secondary-button" id="backOne">← Back</button>
+              <button type="submit" class="primary-button">Review Project ↗</button>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="form-step hidden" id="stepThree">
+
+          <div class="review-icon">✦</div>
+          <h3>Every great idea starts somewhere.</h3>
+          <p class="form-subtitle">Review your project details below.</p>
+
+          <div class="summary-card">
+            <div><span>PROJECT TYPE</span><strong id="summaryType">—</strong></div>
+            <div><span>PROJECT NAME</span><strong id="summaryName">—</strong></div>
+            <div><span>EMAIL</span><strong id="summaryEmail">—</strong></div>
+            <div><span>DESIGN STYLE</span><strong id="summaryStyle">—</strong></div>
+            <div><span>DESCRIPTION</span><strong id="summaryDescription">—</strong></div>
+          </div>
+
+          <p class="demo-notice">This is a project preview. No information is sent to a server.</p>
+
+          <div class="form-actions">
+            <button type="button" class="secondary-button" id="backTwo">← Edit Details</button>
+            <button type="button" class="primary-button" id="finishButton">Start Again ↗</button>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process section" id="process">
+      <div class="section-heading">
+        <span class="eyebrow">THE ATELIER APPROACH</span>
+        <h2>From first thought<br>to <em>final detail.</em></h2>
+      </div>
+
+      <div class="process-grid">
+        <div><span>01</span><h3>Discover</h3><p>We understand your vision and goals.</p></div>
+        <div><span>02</span><h3>Design</h3><p>We shape the experience with intention.</p></div>
+        <div><span>03</span><h3>Create</h3><p>We bring the concept to life.</p></div>
+        <div><span>04</span><h3>Refine</h3><p>We polish every detail.</p></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="#" class="logo">ATELIER<span>.</span></a>
+    <p>Independent thinking. Exceptional experiences.</p>
+    <span>© 2026 ATELIER STUDIO</span>
+  </footer>
+
+  

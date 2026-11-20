@@ -1,31 +1,66 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Project 3 - Features</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUXORA — Choose Features</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<nav>
-  <h2>Ibran</h2>
-</nav>
+  <nav>
+    <h2>LUXORA.</h2>
+    <span>STEP 02 — PROJECT CUSTOMIZATION</span>
+  </nav>
 
-<section class="projects">
-  <h1>Select Features</h1>
-  <p>Choose features for your website</p>
+  <main class="projects">
 
-  <div class="cards">
-    <div class="card selectable">Contact Form</div>
-    <div class="card selectable">Animations</div>
-    <div class="card selectable">SEO Optimization</div>
-    <div class="card selectable">Admin Panel</div>
-  </div>
+    <p>THE DETAILS MATTER</p>
 
-  <br>
-  <a href="final.html" class="btn">Next Step</a>
-</section>
+    <h1>Make It <em>Your Own.</em></h1>
 
-<script src="script.js"></script>
+    <p>Select the features you want in your digital experience.</p>
+
+    <div class="cards">
+
+      <div class="card selectable" data-feature="Contact Form">
+        <span>01 / CONNECT</span>
+        <h3>Contact Form</h3>
+        <p>Make it effortless for clients to reach you.</p>
+      </div>
+
+      <div class="card selectable" data-feature="Animations">
+        <span>02 / MOTION</span>
+        <h3>Animations</h3>
+        <p>Bring your website to life with elegant motion.</p>
+      </div>
+
+      <div class="card selectable" data-feature="SEO Optimization">
+        <span>03 / VISIBILITY</span>
+        <h3>SEO Optimization</h3>
+        <p>Improve your visibility across search engines.</p>
+      </div>
+
+      <div class="card selectable" data-feature="Admin Panel">
+        <span>04 / CONTROL</span>
+        <h3>Admin Panel</h3>
+        <p>Manage your website content with ease.</p>
+      </div>
+
+    </div>
+
+    <p id="selectionCount">0 FEATURES SELECTED</p>
+
+    <a href="final.html" class="btn" id="nextStep">Continue →</a>
+
+  </main>
+
+  <footer>
+    <span>© 2026 LUXORA STUDIO</span>
+    <span>CRAFTED AROUND YOUR VISION.</span>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
